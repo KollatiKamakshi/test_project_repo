@@ -28,6 +28,7 @@ function App() {
     if (index < currentIndex) {
       setCurrentIndex(currentIndex - 1);
     }
+    // If the removed song is the current song, we need to adjust the current index
     else if (index === currentIndex) {
       setCurrentIndex((prev) => prev === playlist.length - 1 ? 0 : prev);
 
